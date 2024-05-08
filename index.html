@@ -79,7 +79,7 @@
             </div>
         </div>
         <!--Title e Subtitle Principais-->
-        <div class="container-lg rounded col-md-11 p-4 pt-0 pb-4 mt-5 shadow" style="background-color: #f5f5f5;"> 
+        <div class="container-fluid rounded col-md-11 p-4 pt-0 pb-4 mt-5 shadow" style="background-color: #f5f5f5;"> 
             <div class="row mt-3 mb-3">
             <div class="col">
               <div class="display-5">
@@ -118,7 +118,7 @@
                   
                       <div class="quantity buttons_added">
                     <input type="button" value="-" class="minus">
-                    <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="qty"
+                    <input type="number" step="1" min="0" max="" id="2" name="quantity" value="0" title="qty"
                     class="input-text qty text" size="4" pattern="" inputmode="">
                     <input type="button" value="+" class="plus">
                     </div>
@@ -133,7 +133,7 @@
               
                 <div class="quantity buttons_added">
                 <input type="button" value="-" class="minus">
-                <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="qty"
+                <input type="number" step="1" min="0" max="" id="3" name="quantity" value="0" title="qty"
                 class="input-text qty text" size="4" pattern="" inputmode="">
                 <input type="button" value="+" class="plus">
                 </div>
@@ -143,7 +143,7 @@
 
 
         <!--Title e Subtitle Acompanhamentos-->
-        <div class="container-lg rounded col-md-11 p-4 pt-0 pb-4 mt-5 shadow" style="background-color: #f5f5f5;">
+        <div class="container-fluid rounded col-md-11 p-4 pt-0 pb-4 mt-5 shadow" style="background-color: #f5f5f5;">
             <div class="row mt-3 mb-3">
                 <div class="col">
                   <div class="display-5">
@@ -166,7 +166,7 @@
           
               <div class="quantity buttons_added">
             <input type="button" value="-" class="minus">
-            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="qty"
+            <input type="number" step="1" min="0" max="" id="4" name="quantity" value="0" title="qty"
             class="input-text qty text" size="4" pattern="" inputmode="">
             <input type="button" value="+" class="plus">
             </div>
@@ -182,7 +182,7 @@
       
           <div class="quantity buttons_added">
         <input type="button" value="-" class="minus">
-        <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="qty"
+        <input type="number" step="1" min="0" max="" id="5" name="quantity" value="0" title="qty"
         class="input-text qty text" size="4" pattern="" inputmode="">
         <input type="button" value="+" class="plus">
         </div>
@@ -197,7 +197,7 @@
   
       <div class="quantity buttons_added">
     <input type="button" value="-" class="minus">
-    <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="qty"
+    <input type="number" step="1" min="0" max="" id="6" name="quantity" value="0" title="qty"
     class="input-text qty text" size="4" pattern="" inputmode="">
     <input type="button" value="+" class="plus">
     </div>
@@ -206,9 +206,8 @@
 </div>
 </div>
           <!--Title Dados-->
-          <div class="container-lg rounded col-md-11 pt-0 pb-4 mt-5 shadow" style="background-color: #f5f5f5;">
+          <div class="container-fluid rounded col-md-11 pt-0 pb-4 mt-5 shadow" style="background-color: #f5f5f5;">
             <div class="row mt-4 mb-3">
-                <div class="col-12 col-md-8 offset-md-2">
                   <div class="display-6 text-center">
                     Dados Pessoais
                 </div>
@@ -232,24 +231,45 @@
           <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
         </div>
         <div class="d-grid mx-auto col-12 col-md-8 offset-md-2">
-            <button class="btn btn-primary" type="button" onclick="calc()">Calcular</button>
+          <button type="button" class="btn btn-primary" onclick="calc()">Calcular</button>
+          
+        </form> 
+
+
+        <div class="modal fade " id="Modal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="orderModalLabel">Detalhes do pedido</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div id="output">
+                  
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              </div>
+            </div>
           </div>
-       </form>
-            
         </div>
         
+      </div>
+      
     </div>
-
+  </div>  
 
 
 
 
 
 <!--JavaScript-->
+<script src="JavaScript.js"></script>
  <script src="js/jquery-3.6.0.min.js"></script>
    <script src="js/jquery.mask.min.js"></script> 
    <script src="js/quantity.js"></script>
-    <script src="JavaScript.js"></script>
+    
     
     
     <script>

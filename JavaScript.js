@@ -13,7 +13,7 @@ function calc(){
     var quantities = document.getElementsByName("quantity");
     var output = document.getElementById("output");
     var total = 0;
-    var name = document.getElementById("name").value;
+    var name = document.getElementById("inputNome").value;
     var formatter = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL',});
 
     output.innerHTML =  "<p> Caro(a) <strong>" + " " + name + "</strong> </p>" + "<p> Seguem os dados do seu pedido.</p>" + "<p>O seu pedido é:</p>";
@@ -31,4 +31,9 @@ function calc(){
     }
 
     output.innerHTML += `<h4>Preço final: ${formatter.format(total)}</h4>`;
+
+    var myModal = new bootstrap.Modal(document.getElementById('Modal'));
+    myModal.show();
+
+
 }
